@@ -5,7 +5,7 @@ require 'json'
 require 'base64'
 
 set :bind, '0.0.0.0'
-set :port, 80
+#set :port, 80
 
 get '/' do
   "Ok this has been changed"
@@ -17,6 +17,9 @@ post '/webhook' do
 
   email = my_thing["FromFull"]["Email"]
   name = my_thing["FromFull"]["Name"]
+
+
+  file_name = ""
 
   attachments = my_thing["Attachments"]
   attachments.each do |attachment|
