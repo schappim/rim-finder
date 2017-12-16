@@ -3,6 +3,7 @@
 require 'sinatra'
 require 'json'
 require 'base64'
+
 set :bind, '0.0.0.0'
 set :port, 80
 
