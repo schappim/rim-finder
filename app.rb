@@ -8,7 +8,7 @@ set :bind, '0.0.0.0'
 set :port, 80
 
 get '/' do
-  "Ok"
+  "Ok this has been changed"
 end
 
 post '/webhook' do
